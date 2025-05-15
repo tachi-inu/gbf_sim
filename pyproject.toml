@@ -1,0 +1,46 @@
+[project]
+name = "gbf-sim"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.9",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = ["RUF012", "SIM105", "UP038"]
+select = [
+  "A",
+  "B",
+  "C4",
+  "DTZ",
+  "E",
+  "F",
+  "G",
+  "I",
+  "ISC",
+  "LOG",
+  "N",
+  "NPY",
+  "PD",
+  "RET",
+  "RUF",
+  "SIM",
+  "T20",
+  "TID",
+  "UP",
+  "W"
+]
+
+unfixable = [
+    "F401",
+    "F841",
+]
